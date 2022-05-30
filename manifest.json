@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+
+  "name": "Helpdesk Plus",
+  "version": "0.1.0",
+  "description": "Pacote de utilidades para o Helpdesk",
+
+  "content_scripts": [
+    {
+      "css": ["styles.css"],
+      "js": ["./addons/helpdesk/ch-produto.js"],
+      "matches": ["https://helpdesk.valenet.local/Chamado/View/*"]
+    }
+    // {
+    //   "css": ["styles.css"],
+    //   "js": ["cliente.js"],
+    //   "matches": ["https://helpdesk.valenet.local/Chamado/View/*/cliente"]
+    // }
+  ]
+}
