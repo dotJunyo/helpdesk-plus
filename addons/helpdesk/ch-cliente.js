@@ -1,5 +1,3 @@
-console.log('Cliente');
+const btnTeste = document.querySelector('#container > h1');
 
-document.body.style.backgroundColor = 'blue';
-var button = document.createElement('button');
-document.body.appendChild(button);
+btnTeste.insertAdjacentHTML('afterend', '<button>Novo like</button>');
