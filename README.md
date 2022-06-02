@@ -1,3 +1,2 @@
-# helpdesk-plus
-
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/helpdesk-plus)
+#Helpdesk Plus
+##Pacote de funções adicionais para o sistema HelpDesk

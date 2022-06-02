@@ -10,11 +10,11 @@
       "css": ["styles.css"],
       "js": ["./addons/helpdesk/ch-produto.js"],
       "matches": ["https://helpdesk.valenet.local/Chamado/View/*"]
+    },
+    {
+      "css": ["styles.css"],
+      "js": ["./addons/helpdesk/ch-cliente.js"],
+      "matches": ["https://www.youtube.com/watch?v=*"]
     }
-    // {
-    //   "css": ["styles.css"],
-    //   "js": ["cliente.js"],
-    //   "matches": ["https://helpdesk.valenet.local/Chamado/View/*/cliente"]
-    // }
   ]
 }
