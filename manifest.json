@@ -5,6 +5,17 @@
   "version": "0.1.0",
   "description": "Pacote de utilidades para o Helpdesk",
 
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "action": {
+    "default_popup": "popup.html"
+  },
+
+  "permissions": ["storage", "activeTab", "scripting", "tabs"],
+
+  "host_permissions": ["<all-urls>"],
   "content_scripts": [
     {
       "css": ["styles.css"],
