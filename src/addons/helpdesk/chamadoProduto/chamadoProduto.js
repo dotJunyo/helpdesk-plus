@@ -21,8 +21,6 @@ let append = document.querySelector("#mw-content-text > div.mw-parser-output > p
 
 append.insertAdjacentHTML('afterend', "<button onclick=" + "'btnCopiarSN()'" + ">❤</button>");
 
-btnCopiar.addEventListener('click', btnCopiarSN())
-
 var s = document.createElement('script');
 s.src = chrome.runtime.getURL('script.js');
 s.onload = function() {
