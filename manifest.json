@@ -3,16 +3,18 @@
   "name": "Helpdesk Plus",
   "version": "0.1.0",
   "description": "Pacote de utilidades para o Helpdesk",
-
+  "icons": {
+    "16": "src/images/icons/icon_16.jpg",
+    "32": "src/images/icons/icon_32.jpg",
+    "48": "src/images/icons/icon_48.jpg",
+    "128": "src/images/icons/icon_128.jpg"
+  },
+  "host_permissions": [
+    "<all_urls>"
+  ],
   "background": {
-    "service_worker": "background.js"
+    "service-worker": "src/scripts/background.js"
   },
-
-  "action": {
-    "default_popup": "popup.html"
-  },
-
-  "host_permissions": ["<all-urls>"],
   "content_scripts": [
     {
       "matches": [
