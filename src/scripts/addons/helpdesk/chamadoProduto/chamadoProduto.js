@@ -1,3 +1,12 @@
+console.log('PRODUTO EXECUTADO');
+
+const TITLE = document.querySelector(
+  'body > div.navbar > div > div > a > small > i'
+);
+TITLE.insertAdjacentText('afterend', ' (31) 3840-7100 |');
+
+
+
 //--------------ADICIONAR PORTA AUTOMATICAMENTE-----------------
 
 const LINK = document.querySelector("#mw-content-text > div.mw-parser-output > p:nth-child(1) > a:nth-child(1)");

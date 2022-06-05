@@ -9,30 +9,22 @@
     "48": "src/images/icons/icon_48.jpg",
     "128": "src/images/icons/icon_128.jpg"
   },
-  "host_permissions": [
-    "<all_urls>"
-  ],
+  "host_permissions": ["<all_urls>"],
   "background": {
     "service-worker": "src/scripts/background.js"
   },
   "content_scripts": [
     {
-      "matches": [
-        "https://*.wikipedia.org/wiki/Lei-ponte*"
-      ],
-      "js": [
-        "src/addons/helpdesk/chamadoProduto/chamadoProduto.js"
-      ],
+      "matches": ["https://helpdesk.valenet.local/*"],
+      "js": ["src/scripts/helpdesk.js"],
       "run_at": "document_end"
     }
   ],
-  "permissions": [
-    "notifications",
-    "scripting",
-    "storage"
-  ],
-  "web_accessible_resources": [{
-    "resources": ["script.js"],
-    "matches": ["<all_urls>"]
-  }]
+  "permissions": ["notifications", "scripting", "storage"],
+  "web_accessible_resources": [
+    {
+      "resources": ["script.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
 }
